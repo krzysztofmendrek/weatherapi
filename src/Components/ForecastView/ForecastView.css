@@ -1,0 +1,66 @@
+.weather-info__forecast-view {
+    width: 60%;
+}
+
+.heading-currently-temperatures, .weather-info--bottom {
+    padding: 0 15%;
+    margin-top: 10%;
+}
+
+.weather-info--top {
+    padding: 10% 15% 0 15%;
+}
+
+.weather-info--top h1 {
+    font-size: 72px;
+    font-weight: 700;
+}
+
+.weather-info--middle {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 15%;
+}
+
+.vertical-line {
+    width: 2px;
+    height: 50px;
+    background-color: #e6e6e6;
+}
+
+.weather-info__forecast-view h2 {
+    font-size: 10px;
+    font-weight: 500;
+    color: #C7C7C7;
+}
+
+.weather-info--middle .weather-info__temperatures p {
+    font-size: 54px;
+    font-weight: 700;
+}
+
+.weather-info--middle .weather-info__description p {
+    font-size: 20px;
+    color: #C7C7C7;
+}
+
+.weather-info--middle .weather-info__img {
+    width: 30%;
+}
+
+.weather-info--bottom {
+    display: flex;
+    justify-content: space-between;
+}
+
+.weather-info--bottom span {
+    font-size: 36px;
+    font-weight: 500;
+}
+
+/* .weather-info__btn-return {
+    padding: 5px 25px;
+    border: 2px solid black;
+    text-decoration: none;
+} */

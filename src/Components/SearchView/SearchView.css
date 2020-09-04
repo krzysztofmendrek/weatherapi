@@ -1,0 +1,30 @@
+.weather-finder {
+    width: 40%;
+    height: 100vh;
+    background-color: #77BCEE; 
+    color: #EBF5FC;
+    text-align: center;
+}
+
+.weather-finder form {
+    padding: 25% 4% 0 4%;
+}
+
+.weather-finder form input {
+    width: 50%;
+    background: linear-gradient(#EBF5FC, #EBF5FC) center bottom 5px /calc(100% - 10px) 1px no-repeat;
+    background-color: #77BCEE;
+    color: #EBF5FC;
+    border: 0;
+    padding: 10px;
+}
+
+::placeholder {
+    color: #EBF5FC;
+}
+
+.searchButton {
+    width: 5%;
+    margin-left: 4%;
+    vertical-align: middle;
+}
