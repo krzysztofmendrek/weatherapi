@@ -4,6 +4,7 @@
     background-color: #77BCEE; 
     color: #EBF5FC;
     text-align: center;
+    box-shadow: inset -2px 0px 20px 0px #666262;
 }
 
 .weather-finder form {
