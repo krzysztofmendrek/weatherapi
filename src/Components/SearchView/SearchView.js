@@ -22,7 +22,6 @@ function SearchView() {
   return (
     <div className='weather-finder'>
         <form>
-            {/* <label className="weather-info__search__label" for="searchInput">Check weather:</label> */}
             <input 
             placeholder='introduce una ciudad o pueblo'
             autoComplete="off"

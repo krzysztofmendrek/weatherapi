@@ -1,18 +1,14 @@
 .weather-info__forecast-view {
     width: 60%;
+    padding: 5%;
 }
 
 .heading-currently-temperatures, .weather-info--bottom {
-    padding: 0 15%;
     margin-top: 10%;
 }
 
-.weather-info--top {
-    padding: 10% 15% 0 15%;
-}
-
 .weather-info--top h1 {
-    font-size: 72px;
+    font-size: 58px;
     font-weight: 700;
 }
 
@@ -20,7 +16,6 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 15%;
 }
 
 .vertical-line {
@@ -59,8 +54,26 @@
     font-weight: 500;
 }
 
-/* .weather-info__btn-return {
-    padding: 5px 25px;
-    border: 2px solid black;
-    text-decoration: none;
-} */
+.weather-info__chart-wrapper {
+    margin-top: 10%;
+}
+
+.info-error {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+}
+
+.info-error .error-wrapper {
+    text-align: center;
+}
+
+.info-error img {
+    width: 30%;
+    margin-bottom: 5%;
+}
+
+.info-error h1 {
+    font-size: 28px;
+}
