@@ -6,8 +6,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 60%;
-  height: 100vh;
+  height: 100%;
 }
 
 .heading-currently-temperatures,
@@ -90,5 +89,10 @@
   .weather-info__forecast-view {
     width: 60%;
     padding: 5%;
+  }
+
+  .weather-info__forecast-view--loading {
+    width: 60%;
+    height: 100vh;
   }
 }

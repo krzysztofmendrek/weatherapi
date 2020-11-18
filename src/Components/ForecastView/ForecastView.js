@@ -22,7 +22,6 @@ function ForecastView() {
         getWeatherByWoeid(woeid)
           .then(resp => {
             const data = resp.data.consolidated_weather[0];
-
             const dataChart = {
               labels: [
                 resp.data.consolidated_weather[0]['applicable_date'],
@@ -62,6 +61,8 @@ function ForecastView() {
               weatherIcon: `${apiUrl}${data['weather_state_abbr']}.svg`
             };
 
+            data ? setLoadingState(false) : setLoadingState(true);
+
             setSearchWeather(listOfData);
           })
           .catch(() => {
@@ -85,7 +86,7 @@ function ForecastView() {
 
   return (
     <>
-      {!isLoading && !isError && (
+      {!isLoading && !isError && searchWeather && (
         <div id='weatherForecastView' className='weather-info__forecast-view'>
           <div className='weather-info--top'>
             <h1 id='weatherCity'>{searchWeather.cityName}</h1>
@@ -184,11 +185,17 @@ function ForecastView() {
           </div>
         </section>
       )}
-      {isLoading && (
+      {/* {!searchWeather && (
         <div className='weather-info__forecast-view--loading'>
           <Loader />
         </div>
-      )}
+      )} */}
+      {(isLoading && !isError) ||
+        (!searchWeather && !isError && (
+          <div className='weather-info__forecast-view--loading'>
+            <Loader />
+          </div>
+        ))}
     </>
   );
 }
