@@ -3,6 +3,14 @@
   padding: 5%;
 }
 
+.weather-info__forecast-view--loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 60%;
+}
+
 .heading-currently-temperatures,
 .weather-info--bottom {
   margin-top: 10%;

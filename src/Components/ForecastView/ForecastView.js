@@ -16,7 +16,6 @@ function ForecastView() {
   const apiUrl = 'https://www.metaweather.com/static/img/weather/';
 
   useEffect(() => {
-    setLoadingState(true);
     getWeatherByCity(city)
       .then(searchCity => {
         const woeid = searchCity.data[0].woeid;
@@ -179,7 +178,11 @@ function ForecastView() {
           </div>
         </section>
       )}
-      {isLoading && <Loader />}
+      {isLoading && (
+        <div className='weather-info__forecast-view--loading'>
+          <Loader />
+        </div>
+      )}
     </>
   );
 }
