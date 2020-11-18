@@ -1,23 +1,22 @@
 .weather-finder {
-  width: 40%;
-  height: 100vh;
+  box-shadow: inset -2px 0px 20px 0px #666262;
   background-color: #77bcee;
   color: #ebf5fc;
   text-align: center;
-  box-shadow: inset -2px 0px 20px 0px #666262;
 }
 
 .weather-finder form {
-  padding: 25% 4% 0 4%;
+  padding: 35px 5px;
 }
 
 .weather-finder form input {
-  width: 60%;
+  width: 65%;
+  padding: 10px;
+  border: 0;
   background: linear-gradient(#ebf5fc, #ebf5fc) center bottom 5px / calc(100% - 10px) 1px no-repeat;
   background-color: #77bcee;
   color: #ebf5fc;
-  border: 0;
-  padding: 10px;
+  text-align: center;
 }
 
 ::placeholder {
@@ -25,7 +24,18 @@
 }
 
 .searchButton {
-  width: 5%;
-  margin-left: 4%;
+  width: 20px;
+  margin-left: 5px;
   vertical-align: middle;
+}
+
+@media (min-width: 768px) {
+  .weather-finder {
+    width: 40%;
+    height: 100vh;
+  }
+
+  .weather-finder form {
+    padding: 25% 4% 0 4%;
+  }
 }

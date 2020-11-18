@@ -1,14 +1,13 @@
 .weather-info__forecast-view {
-  width: 60%;
-  padding: 5%;
+  padding: 10px;
 }
 
 .weather-info__forecast-view--loading {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
   width: 60%;
+  height: 100vh;
 }
 
 .heading-currently-temperatures,
@@ -34,9 +33,9 @@
 }
 
 .weather-info__forecast-view h2 {
+  color: #c7c7c7;
   font-size: 10px;
   font-weight: 500;
-  color: #c7c7c7;
 }
 
 .weather-info--middle .weather-info__temperatures p {
@@ -45,12 +44,12 @@
 }
 
 .weather-info--middle .weather-info__description p {
-  font-size: 20px;
   color: #c7c7c7;
+  font-size: 20px;
 }
 
 .weather-info--middle .weather-info__img {
-  width: 30%;
+  width: 50px;
 }
 
 .weather-info--bottom {
@@ -79,10 +78,17 @@
 }
 
 .info-error img {
-  width: 30%;
+  width: 50px;
   margin-bottom: 5%;
 }
 
 .info-error h1 {
   font-size: 28px;
+}
+
+@media (min-width: 768px) {
+  .weather-info__forecast-view {
+    width: 60%;
+    padding: 5%;
+  }
 }

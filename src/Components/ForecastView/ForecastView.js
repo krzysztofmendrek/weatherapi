@@ -142,6 +142,12 @@ function ForecastView() {
               options={{
                 responsive: true,
                 maintainAspectRatio: false,
+                layout: {
+                  padding: {
+                    top: 5,
+                    right: 5
+                  }
+                },
                 scales: {
                   xAxes: [
                     {
