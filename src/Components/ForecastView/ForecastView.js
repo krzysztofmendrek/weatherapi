@@ -185,11 +185,6 @@ function ForecastView() {
           </div>
         </section>
       )}
-      {/* {!searchWeather && (
-        <div className='weather-info__forecast-view--loading'>
-          <Loader />
-        </div>
-      )} */}
       {(isLoading && !isError) ||
         (!searchWeather && !isError && (
           <div className='weather-info__forecast-view--loading'>
